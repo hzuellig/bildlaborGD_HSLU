@@ -1,0 +1,143 @@
+:root {
+	--bg: #ffffff;
+	--bg-soft: #12161a;
+	--ink: #2d2d2d;
+	--signal: #1be07d;
+	--warn: #ffb347;
+	--scan: rgba(56, 255, 156, 0.45);
+	--edge: rgba(215, 220, 221, 0.618);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 4rem 1.4rem 5rem;
+	color: var(--ink);
+	font-family: "IBM Plex Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+	background: var(--bg);
+}
+
+body.databending *{
+	font-size: 1.3rem !important;
+}
+#nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.75rem 1.4rem;
+	border-bottom: 1px solid var(--edge);
+	display: flex;
+	align-items: flex-end;
+	justify-content: end;
+}
+#nav a{
+	padding-right: 0.75rem;
+}
+
+img{
+	display: block;
+	background-color: gradient(45deg, var(--scan), transparent);
+	border: 1px solid var(--ink);
+	padding: 0.25rem;
+	margin: 0.5rem;
+}
+
+h1,
+p,
+ul {
+	position: relative;
+	z-index: 1;
+	max-width: 76ch !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	line-height: 1.1;
+	letter-spacing: 0.04em;
+    font-weight: 400;
+	text-shadow:
+		0 0 18px rgba(56, 255, 156, 0.17),
+		0 0 1px rgba(255, 255, 255, 0.55);
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.8rem;
+	color: var(--ink);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: grid;
+	gap: 0.7rem;
+}
+
+li {
+	
+	transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+
+.mark{
+	display: inline-block;
+	background: var(--scan);
+}
+
+
+a {
+	color: var(--signal);
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 1px dashed rgba(56, 255, 156, 0.45);
+}
+
+a:hover,
+a:focus-visible {
+	color: #a7ffd2;
+	border-bottom-color: #a7ffd2;
+	outline: none;
+}
+
+@keyframes drift {
+	0% {
+		transform: translateY(0) skewY(-2deg);
+	}
+	50% {
+		transform: translateY(-10px) skewY(-2deg);
+	}
+	100% {
+		transform: translateY(0) skewY(-2deg);
+	}
+}
+
+@media (max-width: 640px) {
+	body {
+		padding: 2.2rem 0.85rem 3rem;
+	}
+
+	li {
+		padding: 0.7rem 0.75rem;
+	}
+
+	body::before {
+		font-size: 0.66rem;
+		letter-spacing: 0.08em;
+	}
+}

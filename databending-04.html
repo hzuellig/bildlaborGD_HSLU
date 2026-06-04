@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databending –– GD Bildlabor</title>
+    <!-- Beispiele für algorithmische Bildmanipulationen -->
+    <!-- Bildlabor 2026, HSLU @author Hanna Zuellig -->
+    <!--Glitch Example @author Ted Davis-->
+    <!-- Beispiele unter Creative Commons License veroeffentlicht: https://creativecommons.org/licenses/by-sa/4.0/ -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body class="databending">
+    <h1> RAW Files kreieren</h1>
+    <p>
+
+        Download GIMP: <a href="https://www.gimp.org/downloads/"
+            target="_blank">GIMP</a>
+    </p>
+    <p>
+
+       GIMP ist ein kostenloses Bildbearbeitungsprogramm, mit dem man u.a. den Dateikopf einer Bilddatei entfernen und die Datei als RAW File exportieren kann. 
+       RAW Files enthalten keine Header-Informationen, die die Datei als Bild identifizieren, sondern nur die reinen Pixelwerte. Sie enthalten auch keine Informationen über die Bildgrösse. Das schafft die Voraussetzung, um die Fluidität von Daten zu nutzen.
+    </p>
+   
+    <p>Wir folgen nun einem Tutorial von Rosa Menkman <a href="databending-files/Sonification_databending_RAW_files-3.pdf">Databending</a></p>
+    <!--
+        Speichert eine Bilddatei aus Gimp als .data Datei, Dateiformat Rohdaten des Bildes RAW, Data. 
+        Wählt die Settings Planar und  R,G, B normal. Ändert die Dateiendung von .data zu .raw.
+    Öffnet die .raw Datei in Photoshop, gebt testweise die korrekte Anzahl der Pixel an und 3 Kanäle (falls .jpg, hat keinen Transparenzkanal)
+    Das Bild sollte korrekt angezeigt werden. Nun könnt ihr die Datei mit einer falschen Anzahl von Pixeln oder Kanälen öffnen. 
+-->
+
+    <div id="nav">
+        <a href="databending-03.html">Previous</a> <a href="databending-05.html">Next</a>
+    </div>
+</body>
+
+</html>
