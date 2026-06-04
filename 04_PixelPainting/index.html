@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="libraries/p5.min.js"></script>
+  <!-- Dat GUI with p5.js Example here-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    #sketch_holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #rect_holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      border: 1px solid red;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sketch_holder"></div>
+  <div id="rect_holder"></div>
+
+<script src="sketch.js"></script>
+</body>
+<script>
+  setInterval(checkDragging, 120);
+  function checkDragging() {
+    if (dragging && mouseX > 0 && mouseY > 0) {
+      document.getElementById('rect_holder').style.display = 'block';
+      document.getElementById('rect_holder').style.top = startY + 'px';
+      document.getElementById('rect_holder').style.left = startX + 'px';
+      document.getElementById('rect_holder').style.width = mouseX - startX + 'px';
+      document.getElementById('rect_holder').style.height = mouseY - startY + 'px';
+    }
+    else {
+      document.getElementById('rect_holder').style.display = 'none';
+    }
+  }
+
+</script>
+
+</html>

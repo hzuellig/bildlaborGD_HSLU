@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Manipulate Pixels within a selected area</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+    #sketch_holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #rect_holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      border: 1px solid red;
+      display: none;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <div id="sketch_holder"></div>
+  <div id="rect_holder"></div>
+  <script>
+
+    setInterval(checkDragging, 120);
+    function checkDragging() {
+      if (dragging) {
+        document.getElementById('rect_holder').style.display = 'block';
+        document.getElementById('rect_holder').style.top = startY + 'px';
+        document.getElementById('rect_holder').style.left = startX + 'px';
+        document.getElementById('rect_holder').style.width = mouseX - startX + 'px';
+        document.getElementById('rect_holder').style.height = mouseY - startY + 'px';
+      }
+      else {
+        document.getElementById('rect_holder').style.display = 'none';
+      }
+    }
+
+
+  </script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
