@@ -5,6 +5,9 @@ Sammlung von p5.js-Experimenten fuer algorithmische Bildmanipulation, Glitch, Pi
 Autorin: Hanna Zuellig  
 Kontext: HSLU, Bildlabor 2026
 
+## Demo
+[Live-Preview](https://hzuellig.github.io/bildlaborGD_HSLU/)
+
 ## Inhalt
 
 - Uebersichtsseite: [index.html](index.html)
