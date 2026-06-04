@@ -7,6 +7,7 @@ Kontext: HSLU, Bildlabor 2026
 
 ## Demo
 [Live-Preview](https://hzuellig.github.io/bildlaborGD_HSLU/)
+[Data Bending](https://hzuellig.github.io/bildlaborGD_HSLU/databending-01.html)
 
 ## Inhalt
 
@@ -33,7 +34,7 @@ Kontext: HSLU, Bildlabor 2026
 - [03_manipulatePixels](03_manipulatePixels/index.html): Direkte Pixeloperationen in Bildbereichen
 - [04_PixelPainting](04_PixelPainting/index.html): Farbsortierung und Pixelstrukturen
 - [05_ShaderPainting](05_ShaderPainting/index.html): Interaktive Verzerrung per Fragment-Shader
-- [06_edgeDetection](06_edgeDetection/index.html): Kantendetektion und Partikel-Flow-Field
+- [06_edgeDetection](06_edgeDetection/index.html): Kantendetektion 
 - [10_video_slitscan](10_video_slitscan/index.html): Zeitlich versetzte Videostreifen
 - [11_dither](11_dither/index.html): Dithering-Algorithmen
 
