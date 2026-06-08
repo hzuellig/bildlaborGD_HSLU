@@ -6,8 +6,8 @@ Autorin: Hanna Zuellig
 Kontext: HSLU, Bildlabor 2026
 
 ## Demo
-[Live-Preview](https://hzuellig.github.io/bildlaborGD_HSLU/)
-[Data Bending](https://hzuellig.github.io/bildlaborGD_HSLU/databending-01.html)
+– [Live-Preview](https://hzuellig.github.io/bildlaborGD_HSLU/)
+– [Data Bending](https://hzuellig.github.io/bildlaborGD_HSLU/databending-01.html)
 
 ## Inhalt
 

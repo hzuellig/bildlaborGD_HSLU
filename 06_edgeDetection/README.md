@@ -6,7 +6,7 @@ Dieses Beispiel zeigt eine einfache Kantenextraktion auf einem Bild
 
 - Laedt ein Bild in `preload()`.
 - Berechnet Kontrastkanten pixelweise in `detectEdge()`.
-- Schreibt die Kanten als Graustufenbild in `newImg`.
+- Schreibt die Kanten als Farbstufenbild in `newImg`.
 
 
 ## Wichtige Parameter in `sketch.js`
