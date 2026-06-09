@@ -8,8 +8,9 @@ let h = 3;
 let history = new Array();
 let historyIndex = 0;
 let offset = 0;
-let scaleFactor = 3;
+let scaleFactor = 2;
 
+let frameHistory = 4; //export every nth frame into history, to avoid memory issues. Adjust as needed.
 
 
 let gui;
@@ -18,6 +19,7 @@ let fileInput;
 
 const controls = {
   stripHeight: 2,
+  frameHistory: 4,
   loadImageFromDisk: () => {
     openFileDialog();
   },
@@ -54,7 +56,7 @@ function setup() {
     history[n] = createImage(width / scaleFactor, height / scaleFactor);
   }
 
-  frameRate(30);
+  //frameRate(30);
 
 
  
@@ -64,8 +66,10 @@ function setup() {
 }
 
 function draw() {
-  
- slitTimeline();
+  if(frameCount % controls.frameHistory ===0){
+    slitTimeline();
+  }
+ 
 }
 
 function slitTimeline() {
@@ -100,7 +104,7 @@ function slitTimeline() {
     if (!history[currentIndex]) {
       continue;
     }
-    copy(history[currentIndex], 0, y, srcW, h * scaleFactor, 0, y * scaleFactor, width, h * scaleFactor);
+    copy(history[currentIndex], 0, y, srcW, h , 0, y * scaleFactor, width, h * scaleFactor);
   }
   offset++;
 }
@@ -112,7 +116,8 @@ function setupGUI() {
 
 
   // Utility actions.
-  gui.add(controls, "stripHeight", 1, 6, 2).name("Streifenbreite");
+  gui.add(controls, "stripHeight", 1, 6, 1).name("Streifenbreite");
+  gui.add(controls, "frameHistory", 1, 10, 1).name("Jeder n-te Frame in History");
   gui.add(controls, "loadImageFromDisk").name("Video von Festplatte");
   gui.add(controls, "saveCurrentCanvas").name("Canvas speichern");
 }
