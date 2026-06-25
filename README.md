@@ -47,3 +47,7 @@ Kontext: HSLU, Bildlabor 2026
 - [databending-05.html](databending-05.html)
 - [databending-06.html](databending-06.html)
 
+## Scrolling Animation Beispiele 
+- [20-scrollama-Basic](20-scrollama-Basic/index.html): Scroll-gesteuerte Basic Animationen mit [Scrollama.js](https://github.com/russellsamora/scrollama).
+- [21-scrollama-Zoom](21-scrollama-Zoom/index.html): Scroll-gesteuerte Überblendungen mit [Scrollama.js](https://github.com/russellsamora/scrollama).
+- [22_scrollGSAP](22_scrollGSAP/index.html): Komplexe, Scroll-gesteuerte Animationen mit GSAP
