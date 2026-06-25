@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Josafronde-Regular';
+  src: url('Josafronde-Regular.woff2') format('woff2'),
+       url('Josafronde-Regular.otf') format('otf');
+}
+body {
+
+  overflow-x: hidden;
+}
+
+
+
+
+
+.post-wrapper {
+  position: relative;
+  /* Referenzpunkt für die Floater */
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+
+
+.floater{
+  z-index: 10;
+  margin: 200px;
+  font-family: 'Josafronde-Regular', serif;
+  font-size: 2rem;
+  
+}

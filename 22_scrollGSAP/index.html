@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Example GSAP Animation</title>
+ 
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+
+ 
+</head>
+
+
+<body>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+
+      <div class="stage">
+
+        <div class="post-wrapper">
+
+
+          <div class="floater" attr-float-speed-y="0" attr-offset-x="0" attr-float-speed-x="30"
+            attr-offset-y="0" attr-scale="1.5" attr-opacity-from="0.5" attr-opacity-to="0.9">
+            I loafe and invite my soul,
+          </div>
+
+          <div class="floater" attr-float-speed-y="100" attr-offset-x="0" attr-float-speed-x="150"
+            attr-offset-y="-100" attr-opacity-from="0.5" attr-opacity-to="1">
+            I lean and loafe at my ease ...
+          </div>
+
+          <div class="floater" attr-float-speed-y="-200" attr-offset-x="600" attr-float-speed-x="-20"
+            attr-offset-y="50" attr-opacity-from="0.5" attr-opacity-to="1" attr-scale="2.5" >
+            observing a spear of summer grass.
+          </div>
+          <div class="floater" attr-float-speed-y="-30" attr-offset-x="00" attr-float-speed-x="30"
+            attr-offset-y="0" attr-scale="1.2" attr-opacity-from="0" attr-opacity-to="0.9">
+            Houses and rooms are full of perfumes ...
+          </div>
+
+          <div class="floater" attr-float-speed-y="50" attr-offset-x="300" attr-float-speed-x="-20"
+            attr-offset-y="0" attr-opacity-from="0" attr-opacity-to="1">
+            the shelves are crowded with perfumes,
+          </div>
+
+          <div class="floater" attr-float-speed-y="0" attr-offset-x="-100" attr-float-speed-x="-20"
+            attr-offset-y="50" attr-opacity-from="0.5" attr-opacity-to="1">
+            I breathe the fragrance myself, and know it and like it,
+          </div>
+        </div><!-- end post-wrapper-->
+        
+
+        
+
+
+      </div><!-- end stage -->
+    </div><!-- end smooth-content -->
+  </div><!-- end smooth-wrapper -->
+
+  <script src="parallax.js"></script>
+
+</body>

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+main {
+  width: min(700px, 92%);
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+}
+
+.step {
+  min-height: 30vh;
+  margin: 0 0 1rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  transform: translate(200px,0);
+  transition: all 1s ease-out;
+}
+
+.step.is-active {
+  background: #e8f4ff;
+  border-color: #8ec5ff;
+  transform: translate(-200px,0);
+}
